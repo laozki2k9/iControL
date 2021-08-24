@@ -59,14 +59,13 @@ p {
 }
 
 /*Links*/
-
 a {
   text-decoration: none;
 }
 
 .link--arrow {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
   color: var(--color-accent);
 }
@@ -88,12 +87,11 @@ a {
 }
 
 /*Badge*/
-
 .badge {
-  border-radius: 20px;
   font-size: 2rem;
-  padding: 0.5rem 1.5rem;
-  font-weight: 600;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+
   white-space: nowrap;
 }
 
@@ -123,25 +121,57 @@ a {
 /*Lists*/
 
 .list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.list .list__items {
+  list-style-type: none;
   color: var(--color-headings);
+
+  padding-left: 0;
 }
 
 .list--inline .list__items {
   display: inline-block;
-  margin-right: 3rem;
+  margin-right: 4rem;
+  word-spacing: 0.2rem;
+  font-size: 2rem;
 }
 
 .list--tick {
-  list-style-image: url(../images/tick.svg);
   padding-left: 3rem;
+  list-style: url(../images/tick.svg);
 }
 
 .list--tick .list__items {
+  margin-bottom: 2rem;
   padding-left: 0.5rem;
-  margin-bottom: 1.2rem;
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width: 1020px) {
+  .list--inline .list__items {
+    font-size: 1.5rem;
+  }
+  .list--tick .list__items {
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+  }
+}
+
+/*Icons*/
+
+.icon {
+  width: 35px;
+  height: 35px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+.icon--container {
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
