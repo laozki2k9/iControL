@@ -6,6 +6,12 @@
   --color-body: #918ca4;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -156,7 +162,6 @@ a {
 }
 
 /*Icons*/
-
 .icon {
   width: 35px;
   height: 35px;
@@ -166,12 +171,73 @@ a {
   fill: var(--color-primary);
 }
 
-.icon--container {
+.icon-container {
   background: #f3f9fa;
-  width: 64px;
-  height: 64px;
   border-radius: 100%;
   display: inline-flex;
+  width: 64px;
+  height: 64px;
   justify-content: center;
   align-items: center;
+}
+/*Buttons*/
+
+.btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.5rem 3rem;
+  border-radius: 30px;
+  border: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.btn--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+.btn--accent:hover {
+  background: #fc6139;
+}
+
+.btn--outline {
+  background: #fff;
+  border: 1px solid var(--color-headings);
+  color: var(--color-headings);
+}
+
+.btn--outline:hover {
+  background: #f0eaea;
+}
+
+.btn--primary {
+  background: var(--color-headings);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: #453189;
+}
+
+.btn--callout {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.btn--callout:hover {
+  background: #78e5f8;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1020px) {
+  .btn {
+    font-size: 1.4rem;
+  }
 }
