@@ -16,67 +16,35 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="block block--dark block--skewed-right showcase">
+    <section class="block container domain--block">
       <header class="block__header">
-        <h2 class="block__heading">User-Friendly Control Panel</h2>
-      </header>
-      <div class="grid grid--1x2 container showcase__content">
-        <picture class="block-showcase__image">
-          <source
-            type="image/webp"
-            srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
+        <h2>The best webhosting Starting at $10 per month</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+          dolorum? Aliquam ex magnam animi nobis.
+        </p>
+        <div class="input-group">
+          <input
+            class="input"
+            type="text"
+            placeholder="Enter domain name here..."
           />
-          <source
-            type="image/png"
-            srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
-          />
-          <img src="images/ipad@2x.png" alt="" />
-        </picture>
-        <div>
-          <div class="media">
-            <div class="media__image">
-              <svg class="icon icon--primary">
-                <use xlink:href="/images/sprite.svg#snap"></use>
-              </svg>
-            </div>
-            <div class="media__body">
-              <h3 class="media__header">Easy Start & Managed Updates</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                praesentium esse voluptatibus. Aliquam, rem dolorum.
-              </p>
-            </div>
-          </div>
-          <div class="media">
-            <div class="media__image">
-              <svg class="icon icon--primary">
-                <use xlink:href="/images/sprite.svg#growth"></use>
-              </svg>
-            </div>
-            <div class="media__body">
-              <h3 class="media__header">Staging, Git & WP-CLI</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                praesentium esse voluptatibus. Aliquam, rem dolorum.
-              </p>
-            </div>
-          </div>
-          <div class="media">
-            <div class="media__image">
-              <svg class="icon icon--primary">
-                <use xlink:href="/images/sprite.svg#wordpress"></use>
-              </svg>
-            </div>
-            <div class="media__body">
-              <h3 class="media__header">Staging, Git & WP-CLI</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                praesentium esse voluptatibus. Aliquam, rem dolorum.
-              </p>
-            </div>
-          </div>
+          <button class="btn btn--accent">
+            <svg class="icon icon--primary">
+              <use xlink:href="/images/sprite.svg#search"></use>
+            </svg>
+            search
+          </button>
         </div>
-      </div>
+      </header>
+      <ul class="list block-domain__prices">
+        <li>.com $9.26</li>
+        <li><span class="badge badge--secondary">.sg $7.91</span></li>
+        <li>.space $12.98</li>
+        <li>.info $14.15</li>
+        <li>.net $16.15</li>
+        <li>.xyz $10.15</li>
+      </ul>
     </section>
   </body>
 </html>
